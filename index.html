@@ -2,15 +2,35 @@
 
 <html lang="ko">
     <head>
-        <title>고려대학교 총장선거</title>
+        <title>고려대학교 제20대 총장선거::메인</title>
+
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
         <script type="text/javascript" src="./js/bignumber.min.js"></script>
         <script type="text/javascript" src="./js/web3-light.js"></script>
         <script type="text/javascript" src="./js/contractController.js"></script>
-    
+
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css">
         <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&subset=korean');
+        </style>
     </head>
-    <body>
-        Hello World
+    <body class="container">
+            <center>
+                <div style="width:500px; height:250px; margin-top:150px; border:2px solid #8b0029;"> 
+                <br>
+                <img src="http://korea.ac.kr/mbshome/mbs/university/images/img/img_1_1_5_1_3_1.gif", width="100px", height="100px">
+                <br>
+                <p style="font-family: 'Noto Sans KR', sans-serif; font-weight: 900; font-size: 20px; color:#8b0029;">고려대학교 제20대 총장선거</p>
+                <button
+                type="button"
+                style="color: #fff; background:#8b0029; font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 12px; padding:5px 40px;"
+                onclick="location.href='candidate.html'">후보자 정보</button>  
+                <button
+                type="button"
+                style="color: #fff; background:#8b0029; font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 12px; padding:5px 35px;"
+                onclick="alert('고려대학교 제20대 총장선거 투표 페이지로 이동')">투표</button>
+                </div>
+            </center>
     </body>
 </html>
