@@ -13,6 +13,79 @@
         <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
     </head>
     <body class="container">
+
+            <style>
+                    @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&subset=korean');
+                    </style>
+                    <button
+                    type="button"
+                    style="color: #fff; background:#8b0029; font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 12px; padding:5px 40px;"
+                    onclick="location.href='index.html'">메인 화면으로 돌아가기</button>
+                    <img src="http://mblogthumb3.phinf.naver.net/20150728_122/braveattack_1438011023660ojmK5_PNG/Korea_University_Global_Emblem.png?type=w2
+                    "style="margin-left: auto; margin-right: auto; display: block;"/  width=100, height=100 >
+                    <p style="font-family: 'Noto Sans KR', sans-serif; font-weight: 900; font-size: 32px; color:#8b0029;" align="center";>고려대학교 제20대 총장선거 투표</p>
+                    <style>
+                      table {
+                        width: 100%;
+                        border: 1px solid #ffffff;
+                    border-collapse: collapse
+                      }
+                      th, td {
+                        border: 1px solid #ffffff;
+                        padding: 10px;
+                    width: 150px;
+                    font-family: 'Noto Sans KR', sans-serif; font-weight: 700; font-size: 14px;
+                      }
+                    </style>
+                    <table>
+                    <tr align="center">
+                    <td><img src="http://infodepot.korea.ac.kr/lecture1/lecEmpPhoto.jsp?languageDiv=ko&Id=110892", width=120, height=160 style="margin-left: auto; margin-right: auto; display: block;"/></td>
+                    <td><img src="http://111.smartsm.co.kr/upload/site/2504/5305750883402.jpg", width=120, height=160 style="margin-left: auto; margin-right: auto; display: block;"/></td>
+                    <td><img src="http://medicine.korea.ac.kr/html_portlet_repositories/5741.jpg", width=120, height=160 style="margin-left: auto; margin-right: auto; display: block;"/></td>
+                    <td><img src="http://www.dooheelee.com/images/profile/dooheelee.jpg", width=120, height=160 style="margin-left: auto; margin-right: auto; display: block;"/></td>
+                    <td><img src="http://faculty.korea.ac.kr/_res/kufaculty/img/professor/chungyounghwan.png", width=120, height=160 style="margin-left: auto; margin-right: auto; display: block;"/></td>
+                    <td><img src="https://me.korea.ac.kr/_attach/image/2016/08/thumb_hpeZvxfyCUWRtBxkzGSW.jpg", width=120, height=160 style="margin-left: auto; margin-right: auto; display: block;"/></td>
+                    <td><img src="http://faculty.korea.ac.kr/_res/kufaculty/img/professor/choikwangsik.png", width=120, height=160 style="margin-left: auto; margin-right: auto; display: block;"/></td>
+                    </tr>
+                    <tr align="center" span style="color:black">
+                    <th>
+                    <button
+                    type="button"
+                    style="color: #fff; background:#8b0029; font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 14px; padding:5px 40px;"
+                    onclick="voteForCandidate('김동원')">김동원</button></th>
+                    <th>
+                    <button
+                    type="button"
+                    style="color: #fff; background:#8b0029; font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 14px; padding:5px 40px;"
+                    onclick="voteForCandidate('남기춘')">남기춘</button></th>
+                    <th>
+                    <button
+                    type="button"
+                    style="color: #fff; background:#8b0029; font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 14px; padding:5px 45px;"
+                    onclick="voteForCandidate('선경')">선경</button></th>
+                    <th>
+                    <button
+                    type="button"
+                    style="color: #fff; background:#8b0029; font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 14px; padding:5px 40px;"
+                    onclick="voteForCandidate('이두희')">이두희</button></th>
+                    <th>
+                    <button
+                    type="button"
+                    style="color: #fff; background:#8b0029; font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 14px; padding:5px 40px;"
+                    onclick="voteForCandidate('정영환')">정영환</button></th>
+                    <th>
+                    <button
+                    type="button"
+                    style="color: #fff; background:#8b0029; font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 14px; padding:5px 40px;"
+                    onclick="voteForCandidate('정진택')">정진택</button></th>
+                    <th>
+                    <button
+                    type="button"
+                    style="color: #fff; background:#8b0029; font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 14px; padding:5px 40px;"
+                    onclick="voteForCandidate('최광식')">최광식</button></th>
+                    </tr>
+
+
             <h3>Voting</h3>
             <div class="table-responsive">
                 <table class="table table-bordered">
@@ -24,17 +97,35 @@
                 </thead>
                 <tbody>
                 <tr>
-                <td>alice</td>
+                <td>김동원</td>
                 <td id="candidate-1"></td>
                 </tr>
                 <tr>
-                <td>bob</td>
+                <td>남기춘</td>
                 <td id="candidate-2"></td>
+                </tr>
+                <tr>
+                <td>선경</td>
+                <td id="candidate-3"></td>
+                </tr>
+                <tr>
+                <td>이두희</td>
+                <td id="candidate-4"></td>
+                </tr>
+                <tr>
+                <td>정영환</td>
+                <td id="candidate-5"></td>
+                </tr>
+                <tr>
+                <td>정진택</td>
+                <td id="candidate-6"></td>
+                </tr>
+                <tr>
+                <td>최광식</td>
+                <td id="candidate-7"></td>
                 </tr>
                 </tbody>
                 </table>
             </div>
-            <input type="text" id="candidate" />
-            <a href="#" onclick="voteForCandidate()" class="btn btn-primary">Vote</a>
     </body>
 </html>
